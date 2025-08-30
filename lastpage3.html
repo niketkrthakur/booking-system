@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditorium Booking</title>
+    <link rel="stylesheet" href="laststyle3.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Book an Auditorium</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time Slot:</label>
+            <select id="time" name="time" required>
+                <option value="">Select Time</option>
+                <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
+                <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+                <option value="6:00 PM - 8:00 PM">6:00 PM - 8:00 PM</option>
+                <option value="10:00 AM - 10:00 PM">Others</option>
+            </select>
+            <button type="submit"><a href="lastpage.html" class="button">Book Now</a></button>
+            
+        </form>
+        <p id="confirmationMessage"></p>
+    </div>
+
+    <script src="lastscript3.js"></script>
+</body>
+</html>

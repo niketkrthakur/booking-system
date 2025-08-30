@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditorium Booking</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Excellence.html">Excellence</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSXOuqvpVoigzyL6LSIEzwKo0xStlxc3JJPG3Wn0mfGCT9VXVS-xfwwClt8FCcXfMFuws&usqp=CAU" wedth="300" height="300">
+        <h1>Excellence Auditorium Booking Page</h1>
+        <p>Welcome to the auditorium booking system. Please select the number of seats you'd like to book for the event.</p>
+
+        <!-- Auditorium Seats Layout -->
+        <div class="auditorium">
+            <div class="seats" id="seats">
+                <!-- Dynamic seat buttons will appear here -->
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <form id="booking-form">
+            <label for="seatCount">Select number of seats to book:</label>
+            <input type="number" id="seatCount" min="1" max="50" required>
+            <button type="submit"><a href="lastpage3.html">Book</a></button>
+        </form>
+
+        <div id="booking-status"></div>
+    </section>
+
+    <footer>
+        <p>&copy;© 2025 Auditorium Booking System. All rights reserved.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
